@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="AlgorithmGraphic:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/AlgorithmGraphic_jar</output-path>
+    <root id="archive" name="AlgorithmGraphic.jar">
+      <element id="module-output" name="AlgorithmGraphic" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/javaGeom-0.11.2.jar" path-in-jar="/" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/test.CSS" />
+    </root>
+  </artifact>
+</component>
