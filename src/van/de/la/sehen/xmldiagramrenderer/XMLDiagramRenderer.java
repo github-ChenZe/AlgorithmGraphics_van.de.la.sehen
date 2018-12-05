@@ -46,12 +46,6 @@ public class XMLDiagramRenderer {
     }
 
     public static void main(String[] args) {
-        PortableDiagramPixelImage image = new XMLDiagramRenderer().renderFromFile(new File(XMLDiagramRenderer.class.getResource("/testanitree.xml").getPath()),
-                new File(XMLDiagramRenderer.class.getResource("/test.CSS").getPath()));
-        int i = 0;
-        while (image != null) {
-            image.exportToFile("aniResult.png", i++);
-            image = image.getNext();
-        }
+        WarningStream.putWarning("Calling main from renderer.", XMLDiagramRenderer.class);
     }
 }

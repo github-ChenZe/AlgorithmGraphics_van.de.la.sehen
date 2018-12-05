@@ -4,7 +4,7 @@
     <root id="archive" name="AlgorithmGraphic.jar">
       <element id="module-output" name="AlgorithmGraphic" />
       <element id="extracted-dir" path="$PROJECT_DIR$/javaGeom-0.11.2.jar" path-in-jar="/" />
-      <element id="file-copy" path="$PROJECT_DIR$/src/test.CSS" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/testsrc/input/diagram/test.CSS" />
     </root>
   </artifact>
 </component>

@@ -28,6 +28,10 @@ public class WarningStream {
 
     public static void putWarning(String warning, Object source, WarningType type) {
         if (type == WarningType.InvalidSize) return;
+        if (type == WarningType.Note) {
+            putSuccess(warning, source);
+            return;
+        }
         putWarning(warning, source);
     }
 

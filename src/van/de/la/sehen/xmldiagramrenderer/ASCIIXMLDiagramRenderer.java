@@ -44,8 +44,6 @@ public class ASCIIXMLDiagramRenderer {
     }
 
     public static void main(String[] args) {
-        new ASCIIXMLDiagramRenderer().renderFromFile(new File(ASCIIXMLDiagramRenderer.class.getResource("/testasctree.xml").getPath()),
-                new File(ASCIIXMLDiagramRenderer.class.getResource("/test.CSS").getPath()))
-                .dump();
+        WarningStream.putWarning("Calling main from renderer.", ASCIIXMLDiagramRenderer.class);
     }
 }

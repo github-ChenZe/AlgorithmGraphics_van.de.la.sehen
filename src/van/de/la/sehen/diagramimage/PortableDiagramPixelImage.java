@@ -90,12 +90,7 @@ public class PortableDiagramPixelImage {
     }
 
     public void exportToFile(String filename, int count) {
-        try {
-            ImageIO.write(bufferedImage, "PNG", new File(filename + count + ".png"));
-        } catch (IOException e) {
-            e.printStackTrace();
-            WarningStream.putWarning("Failed to export image.", this);
-        }
+        this.exportToFile(filename + count + ".png");
         if (next != null) next.exportToFile(filename, ++count);
     }
 

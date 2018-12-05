@@ -3,6 +3,10 @@ package van.de.la.sehen.diagramimage.asciidiagramimage;
 import van.de.la.sehen.diagramimage.element.asciielement.TableDrawingElement;
 import van.de.la.sehen.warning.WarningStream;
 
+import java.io.OutputStream;
+import java.io.PrintStream;
+import java.io.PrintWriter;
+
 public class ASCIIImage {
     private int rows;
     private int columns;
@@ -27,12 +31,16 @@ public class ASCIIImage {
         return setChar(row, column, new ASCIILiteralChar(imageChar));
     }
 
-    public void dump() {
+    public void dump(PrintStream out) {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
-                System.out.print(characters[i][j].toChar());
+                out.print(characters[i][j].toChar());
             }
-            System.out.println();
+            out.println();
         }
+    }
+
+    public void dump() {
+        dump(System.out);
     }
 }
